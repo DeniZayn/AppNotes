@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import com.arhiser.todolist.R;
-import com.example.appnotes.Model.Note;
+import com.arhiser.todolist.model.Note;
 import com.example.appnotes.data.App;
 
 
@@ -69,7 +69,7 @@ public class FirstFragment extends AppCompatActivity {
             case R.id.action_save:
                 if (editText.getText().length() > 0) {
                     note.text = editText.getText().toString();
-                    note.timestump = System.currentTimeMillis();
+                    note.timestamp = System.currentTimeMillis();
                     if (getIntent().hasExtra(EXTRA_NOTE)) {
                         App.getInstance().getNoteDao().update(note);
                     } else {
