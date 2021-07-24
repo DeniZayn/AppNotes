@@ -10,7 +10,9 @@ import androidx.room.Query;
 import androidx.room.Update;
 
 import java.util.List;
-import com.example.appnotes.Model.Note;
+
+import com.arhiser.todolist.model.Note;
+//import com.example.appnotes.Model.Note;
 
 public interface NoteDao {
 
