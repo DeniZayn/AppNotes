@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import com.arhiser.todolist.R;
-import com.arhiser.todolist.model.Note;
+import com.example.appnotes.Model.Note;
 import com.example.appnotes.data.App;
 
 

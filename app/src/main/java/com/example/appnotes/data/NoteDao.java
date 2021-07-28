@@ -3,6 +3,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import androidx.lifecycle.LiveData;
+import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
@@ -11,9 +12,9 @@ import androidx.room.Update;
 
 import java.util.List;
 
-import com.arhiser.todolist.model.Note;
-//import com.example.appnotes.Model.Note;
+import com.example.appnotes.Model.Note;
 
+@Dao
 public interface NoteDao {
 
     @Query("SELECT * FROM Note")

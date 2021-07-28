@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SortedList;
 
 import com.arhiser.todolist.R;
-import com.arhiser.todolist.model.Note;
+import com.example.appnotes.Model.Note;
 import com.arhiser.todolist.screens.details.FirstFragment;
 import com.example.appnotes.data.App;
 
