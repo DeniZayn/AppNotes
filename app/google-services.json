@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1011988363401",
+    "project_id": "appnotes-fb161",
+    "storage_bucket": "appnotes-fb161.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011988363401:android:1102cdf133a1bcf396ee58",
+        "android_client_info": {
+          "package_name": "com.example.appnotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011988363401-g1ga6jkn18augbouuhm21g1agspegvs5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwSSudrNxmEWYOuHonWvrHfnZZSemEG-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011988363401-g1ga6jkn18augbouuhm21g1agspegvs5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".screens.main.MainActivity">
 
+    <TextView
+        android:textSize="26sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvColor"
+        android:layout_marginBottom="50dp"
+        android:text="Text color">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/tvSize"
+        android:text="Text size">
+
+    </TextView>
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -21,6 +21,28 @@
         android:gravity="top"
         android:padding="16dp"/>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Select Date:"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/datePickerButton"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Jan 01 2020"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp" />
+
+
 </LinearLayout>
 
 

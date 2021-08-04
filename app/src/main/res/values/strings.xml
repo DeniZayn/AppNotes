@@ -8,9 +8,9 @@
     <string name="completed">Выполнение</string>
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">close</string>
-    <string name="settings">Week</string>
-    <string name="main">Year</string>
-    <string name="favorite">Month</string>
+    <string name="settings">Tools</string>
+    <string name="main">Targets</string>
+    <string name="favorite">Favorite</string>
     <string name="fragment_navigation">MyMenu</string>
 
 
