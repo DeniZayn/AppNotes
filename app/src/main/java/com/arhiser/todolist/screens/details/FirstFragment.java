@@ -2,6 +2,7 @@ package com.arhiser.todolist.screens.details;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,8 +11,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import com.arhiser.todolist.R;
@@ -28,9 +32,6 @@ public class FirstFragment extends AppCompatActivity {
     private EditText edText;
     private DatabaseReference mDataBase;
     private String USER_KEY = "User";
-
-
-
 
     private DatePickerDialog datePickerDialog;
     private Button dateButton;
@@ -50,6 +51,28 @@ public class FirstFragment extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_first);
+
+        findViewById(R.id.dialog_alert_title).setOnClickListener((new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                        builder.setTitle("Check")
+                                .setMessage("Delite Note?")
+                                .setIcon(R.drawable.ic_launcher_background)
+                                .setCancelable(false)
+                                .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Toast.makeText(this, "CLICK TO OK", Toast.LENGTH_SHORT).show();
+                                    }
+
+                                })
+
+                                .show();
+                    }
+
+                }
+
 
         init();
 
@@ -106,7 +129,7 @@ public class FirstFragment extends AppCompatActivity {
                     if (getIntent().hasExtra(EXTRA_NOTE)) {
                         App.getInstance().getNoteDao().update(note);
                     } else {
-                        App.getInstance().getNoteDao().insertAll(note);
+                        App.getInstance().getNoteDao().insert(note);
                     }
                     finish();
                 }

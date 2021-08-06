@@ -31,4 +31,9 @@
         android:layout_marginLeft="15dp"
         android:src="@android:drawable/ic_notification_clear_all"/>
 
-</LinearLayout>
+
+
+
+
+
+    </LinearLayout>
